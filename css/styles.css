@@ -68,9 +68,8 @@ body {
 }
 
 .button {
-  border-color: transparent;
+  border: none;
   border-radius: 4px;
-  margin: 5px;
   cursor: pointer;
   font-family: inherit;
   font-weight: 500;
@@ -81,7 +80,6 @@ body {
 
 .section-title {
   color: var(--dark-text-color);
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -132,7 +130,6 @@ body {
 }
 /* Hero title. Effective Solutions for Your Business */
 .hero-title {
-  font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -141,8 +138,6 @@ body {
 }
 /* Hero button. Order Service */
 .hero .button {
-  left: 636px;
-  top: 428px;
   background-color: var(--brand-color);
   color: var(--white-text-color);
 }
