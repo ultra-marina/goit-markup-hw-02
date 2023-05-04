@@ -1,0 +1,206 @@
+/* 
+    кольори текста логотипа: #4D5AE5, #2E2F42, #F4F4FD
+    колір текста навігації та заголовків: #2E2F42
+    колір телефона та мейла: #434455
+    колір текста на банері: #FFFFFF
+    колір осн. текста (в секціях, картках портфоліо): #434455
+    колір текста на кнопці: #FFFFFF
+    колір фону верхньої секції та футера: #2E2F42
+    колір фону нашої команди: #F4F4FD
+    колір рамок: #E7E9FC
+    колір кнопок портфоліо: #F4F4FD
+    колір акценту кнопки фільтру портфоліо: #404BBF
+    колір текста в футері: #F4F4FD
+    */
+
+:root {
+  --dark-text-color: #2e2f42;
+  --brand-color: #4d5ae5;
+  --light-text-color: #f4f4fd;
+  --primary-text-color: #434455;
+  --white-text-color: #ffffff;
+  --black-text-color: #000000;
+  --primary-bg-color: #ffffff;
+  --light-bg-color: #f4f4fd;
+  --dark-bg-color: #2e2f42;
+  --border-color: #e7e9fc;
+  --accent-color: #404bbf;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.paragraph-text {
+  color: var(--primary-text-color);
+  font-size: 16px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--brand-color);
+}
+
+.logo-dark {
+  color: var(--dark-text-color);
+}
+
+.logo-light {
+  color: var(--light-text-color);
+}
+
+.button {
+  border-color: transparent;
+  border-radius: 4px;
+  margin: 5px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.section-title {
+  color: var(--dark-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+.item-title {
+  color: var(--dark-text-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+/* Header */
+
+.header {
+  background: var(--primary-bg-color);
+}
+
+/* site-nav, contact-nav */
+
+.site-nav .link {
+  color: var(--dark-text-color);
+  font-weight: 500;
+}
+.contact-nav {
+  font-style: normal;
+}
+.contact-nav .link {
+  color: var(--primary-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contact-nav .link:hover,
+.contact-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Hero */
+
+/* Hero background */
+.hero {
+  background: var(--dark-bg-color);
+}
+/* Hero title. Effective Solutions for Your Business */
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--white-text-color);
+}
+/* Hero button. Order Service */
+.hero .button {
+  left: 636px;
+  top: 428px;
+  background-color: var(--brand-color);
+  color: var(--white-text-color);
+}
+.hero .button:hover,
+.hero .button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+
+/* Sections */
+
+/* Features */
+
+.features-list .title {
+  color: var(--title-text-color);
+}
+
+/* Work */
+
+/* Team */
+
+.team {
+  background-color: var(--light-bg-color);
+}
+
+.team-list-item {
+  background-color: var(--primary-bg-color);
+  text-align: center;
+}
+
+.team-list .title {
+  color: var(--title-text-color);
+}
+
+/* Portfolio */
+
+.portfolio .button {
+  padding: 6px 22px;
+  background-color: var(--light-bg-color);
+  border: 1px solid var(--border-color);
+  color: var(--brand-color);
+}
+
+.portfolio .button:hover,
+.portfolio .button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+
+.portfolio-list .title {
+  color: var(--title-text-color);
+}
+
+/* Footer */
+
+.footer {
+  background: var(--dark-bg-color);
+}
+.footer-text {
+  color: var(--light-text-color);
+}
